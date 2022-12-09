@@ -1,0 +1,199 @@
+body {
+}
+
+.main {
+  min-height: 40vh;
+
+  display: grid;
+  place-items: center;
+  margin: 10% auto;
+}
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+}
+.slide-track {
+  display: flex;
+  width: calc(250px * 10);
+  animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 5));
+  }
+}
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+  border: 2px solid steelblue;
+  border-radius: 5px;
+
+  transition: transform 1s;
+}
+img:hover {
+  transform: translateZ(20px);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+body {
+  height: auto;
+  margin: 0%;
+}
+header h1 {
+  background-color: rgb(54, 86, 95);
+  margin: 0%;
+  padding: 20px;
+  text-align: center;
+  color: yellowgreen;
+}
+#navigate {
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+.menu {
+  margin: 0%;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.menu li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.menu li {
+  padding: 10px;
+  display: inline-block;
+}
+.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.menu li:nth-child(2):hover #Dropdown_1,
+.menu li:nth-child(3):hover #Dropdown_2,
+.menu li:nth-child(4):hover #Dropdown_2 {
+  display: block;
+}
+#Dropdown_1,
+#Dropdown_2 {
+  position: absolute;
+  width: auto;
+  max-width: 150px;
+  display: none;
+  top: 42.5px;
+  background-color: whitesmoke;
+  padding: 0%;
+}
+#Dropdown_1 li,
+#Dropdown_2 li {
+  display: block;
+}
+#Dropdown_1 li:hover,
+#Dropdown_2 li:hover {
+  background-color: gainsboro;
+}
+#Dropdown_1 li a,
+#Dropdown_2 li a {
+  color: steelblue;
+  font-size: 16px;
+}
+.box1 {
+  width: 20vw;
+  height: 50vh;
+  padding: 15px;
+}
+
+.first {
+  display: flex;
+}
+.box2 {
+  width: 30px;
+  height: 70px;
+}
+.diab {
+  width: 15vw;
+  height: 30vh;
+  display: block;
+  box-shadow: 10px 10px 5px lightblue;
+  z-index: 999;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+}
+
+.diab:hover {
+  transform: scale(1.2);
+}
+.box1 button {
+  border-radius: 5px;
+  color: orange;
+  background-color: rgb(199, 218, 225);
+  border: 1px solid blue;
+  width: 15vw;
+  box-shadow: 10px 10px 5px lightblue;
+}
+button:active {
+  background-color: rgb(250, 234, 230);
+  border: 2px solid rgb(0, 255, 76);
+}
+.blue {
+  color: blue;
+}
+.bold {
+  font-weight: bold;
+}
+.foot {
+  margin-top: 50px;
+}
+.foot p {
+  text-align: center;
+}
+.name label {
+  display: block;
+}
+.address label {
+  display: block;
+}
+.test label {
+  display: block;
+}
+.deltype label {
+  display: block;
+}
+.datetime label {
+  display: block;
+}
+.labmain {
+  display: flex;
+  margin: 15vh 20vw;
+}
+.form {
+  height: 60vh;
+  width: 25vw;
+}
+.limage {
+  height: 60vh;
+  width: 25vw;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form for Lab Test!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>GL Pharmacy</h1></header>
+    <nav id="navigate">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="Animate.html">Our Medicines</a>
+          <ul id="Dropdown_1">
+            <li><a href="#">Fever</a></li>
+            <li><a href="#">Muscle Pain</a></li>
+            <li><a href="#">Cold and Cough</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Health Care</a>
+          <ul id="Dropdown_2">
+            <li><a href="#">Baby charset</a></li>
+            <li><a href="#">Skin Care</a></li>
+            <li><a href="#">Home Care</a></li>
+            <li><a href="#">Personal Care</a></li>
+            <li><a href="#">Pet Care</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Lab Test</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="labmain">
+      <div class="form">
+        <form action="">
+          <fieldset class="name">
+            <label for="fullname"
+              >Full Name <input type="text" id="fullname" />
+            </label>
+            <label for="number"
+              >Patient ID <input type="number" id="number" />
+            </label>
+            <label for="phone"
+              >Phone Number <input type="number" id="phone" />
+            </label>
+            <label for="email">Email <input type="email" id="email" /> </label>
+          </fieldset>
+          <fieldset class="address">
+            <label for="houseno"
+              >House Number <input type="number" id="houseno"
+            /></label>
+            <label for="street">Street <input type="text" id="street" /></label>
+            <label for="area">Area <input type="text" id="area" /></label>
+
+            <select name="district" id="district">
+              <option value="">District</option>
+              <option value="ne">North-East</option>
+              <option value="nw">North-West</option>
+              <option value="se">South-East</option>
+              <option value="sw">South-West</option>
+            </select>
+          </fieldset>
+          <fieldset class="test">
+            <label for="cbc">CBC <input type="checkbox" id="cbc" /></label>
+            <label for="urine"
+              >Complete Urine <input type="checkbox" id="urine"
+            /></label>
+            <label for="thyroid"
+              >Thyroid Stimulating Hormone(TSH)
+              <input type="checkbox" id="thyroid"
+            /></label>
+            <label for="glucose"
+              >Glucose <input type="checkbox" id="glucose"
+            /></label>
+          </fieldset>
+          <fieldset class="deltype">
+            <label for="yes"
+              >Do you want a hard copy? Yes
+              <input type="radio" name="choice" id="yes" required
+            /></label>
+            <label for="no"
+              >No <input type="radio" name="choice" id="no"
+            /></label>
+          </fieldset>
+          <fieldset class="datetime">
+            <label for="date">Enter Date <input type="date" id="date" /></label>
+            <label for="time">Enter Time <input type="time" id="time" /></label>
+          </fieldset>
+          <button type="submit">submit</button>
+          <button type="reset">reset</button>
+        </form>
+      </div>
+      <div class="pic">
+        <img class="limage" src="./Lab-Test/lab-test.jpg" alt="" />
+      </div>
+    </div>
+    <footer class="foot">
+      <p>Copyright@GLPharmacy</p>
+    </footer>
+  </body>
+</html>
